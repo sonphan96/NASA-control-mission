@@ -44,6 +44,7 @@ async function httpAbortLaunch(id) {
       method: 'delete',
     });
   } catch (err) {
+    console.log(err);
     return {
       ok: false,
     };
